@@ -139,11 +139,13 @@ function NewMaze(){
 
   return(
     <>
-      <canvas ref={canvasRef} height={500} width={500} id="Maze"/>
-      <br />
-      <input type="number" id="row" placeholder="row" />
-      <input type="number" id="col" placeholder="col" />
-      <button onClick={()=>{
+    <div className="mazediv">
+      <canvas ref={canvasRef} height={500} width={500} id="Maze"/></div>
+      <br/>
+      <div className="buttondiv">
+      <input className="rowvalue" type="number" id="row" placeholder="row" />
+      <input className="columnvalue" type="number" id="col" placeholder="col" />
+      <button className="genmaze" onClick={()=>{
         setDimensions({
           // row: parseInt((document.getElementById('row') as HTMLInputElement)?.value || '1'),
           // col: parseInt((document.getElementById('col') as HTMLInputElement)?.value || '1')
@@ -152,6 +154,8 @@ function NewMaze(){
         });
         // handleClick();
       }}>Generate new Maze</button>
+      </div>
+
     </>
   )
 }

@@ -9,3 +9,27 @@ b{
   gap: 1rem;
   margin-bottom: 3rem;
 }
+
+.mazediv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttondiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowvalue{
+  width: 100px;
+}
+
+.columnvalue{
+  width: 100px;
+}
+
+.genmaze{
+  width: 130px;
+}
